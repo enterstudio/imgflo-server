@@ -46,7 +46,7 @@
     "node-static": "^0.7.3",
     "noflo": "~0.5.18",
     "noflo-canvas": "^0.2.0",
-    "noflo-core": "^0.1.11",
+    "noflo-core": "^0.2.2",
     "noflo-geometry": "automata/noflo-geometry",
     "noflo-image": "0.2.0",
     "noflo-math": "0.0.6",
