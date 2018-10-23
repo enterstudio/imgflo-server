@@ -23,7 +23,9 @@
   "scripts": {
     "start": "node index.js",
     "postinstall": "./node_modules/.bin/noflo-cache-preheat",
-    "test": "mocha --reporter spec --compilers .coffee:coffee-script/register ./spec/*.coffee"
+    "test": "mocha --reporter spec --compilers .coffee:coffee-script/register ./spec/*.coffee",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "imgflo-server-application-add": "./bin/imgflo-server-application-add"
@@ -37,19 +39,19 @@
     "coffee-script": "^1.7.1",
     "express": "^4.12.3",
     "fbp": "^1.5.0",
-    "knex": "^0.7.6",
+    "knex": "^0.11.0",
     "knox": "^0.9.1",
     "mime-types": "^2.1.7",
     "msgflo": "^0.9.1",
     "msgflo-nodejs": "^0.7.2",
     "newrelic": "^1.25.5",
     "node-static": "^0.7.3",
-    "noflo": "~0.5.18",
+    "noflo": "~0.8.0",
     "noflo-canvas": "^0.2.0",
-    "noflo-core": "^0.1.11",
+    "noflo-core": "^0.2.2",
     "noflo-geometry": "automata/noflo-geometry",
-    "noflo-image": "0.2.0",
-    "noflo-math": "0.0.6",
+    "noflo-image": "0.2.7",
+    "noflo-math": "0.0.8",
     "noflo-md5": "automata/noflo-md5",
     "noflo-objects": "^0.1.12",
     "noflo-seedrandom": "automata/noflo-seedrandom",
@@ -65,7 +67,8 @@
     "json-loader": "^0.5.4",
     "webpack": "^1.12.14",
     "sqlite3": "^3.0.5",
-    "websocket": "~1.0.8"
+    "websocket": "~1.0.8",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "simple-statistics": "^0.9.0",
@@ -79,5 +82,6 @@
       "imgflo-server/ProcessImage": "node build/worker.js #ROLE",
       "imgflo-server/HttpApi": "node web.js"
     }
-  }
+  },
+  "snyk": true
 }
