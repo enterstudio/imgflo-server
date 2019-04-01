@@ -1,0 +1,31 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2019-04-01T02:18:18.595Z'
+    - sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-04-01T02:18:18.595Z'
+    - sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-01T02:18:18.595Z'
+    - sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-04-01T02:18:18.595Z'
+  'npm:lodash:20180130':
+    - noflo-seedrandom > noflo > babel-core > lodash:
+        patched: '2019-04-01T02:18:18.595Z'
+    - noflo-md5 > noflo > babel-core > lodash:
+        patched: '2019-04-01T02:18:18.595Z'
+    - noflo-geometry > noflo > babel-core > lodash:
+        patched: '2019-04-01T02:18:18.595Z'
+  'npm:mime:20170907':
+    - noflo-image > superagent > form-data > mime:
+        patched: '2019-04-01T02:18:18.595Z'
+  'npm:minimatch:20160620':
+    - noflo-seedrandom > noflo > babel-core > minimatch:
+        patched: '2019-04-01T02:18:18.595Z'
+    - noflo-md5 > noflo > babel-core > minimatch:
+        patched: '2019-04-01T02:18:18.595Z'
+    - noflo-geometry > noflo > babel-core > minimatch:
+        patched: '2019-04-01T02:18:18.595Z'
