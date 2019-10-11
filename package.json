@@ -42,7 +42,7 @@
     "mime-types": "^2.1.7",
     "msgflo": "^0.9.1",
     "msgflo-nodejs": "^0.7.2",
-    "newrelic": "^1.25.5",
+    "newrelic": "^5.13.1",
     "node-static": "^0.7.3",
     "noflo": "~0.5.18",
     "noflo-canvas": "^0.2.0",
