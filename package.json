@@ -61,9 +61,9 @@
     "temp": "^0.8.3",
     "tmp": "0.0.24",
     "uuid": "^2.0.1",
-    "coffee-loader": "^0.7.2",
+    "coffee-loader": "^1.0.0",
     "json-loader": "^0.5.4",
-    "webpack": "^1.12.14",
+    "webpack": "^5.0.0",
     "sqlite3": "^3.0.5",
     "websocket": "~1.0.8"
   },
